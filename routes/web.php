@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('helloworld', function() {
+    return view('helloworld');
+});
+
+Route::get('addressMigration', function() {
+    return view('addressMigration')->with('name', 'Pony');
+});
+
+Route::get('database', function() {
+    return view('database')->with('id', '1');
+});
